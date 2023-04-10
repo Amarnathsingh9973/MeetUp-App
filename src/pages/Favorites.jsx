@@ -1,5 +1,5 @@
 function FavoritesPage() {
-    return <div>All</div>;
+    return <div>fauv</div>;
   }
   export default FavoritesPage;
   

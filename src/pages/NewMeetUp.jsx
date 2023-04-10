@@ -1,4 +1,4 @@
 function NewMeetUpPage() {
-  return <div>All</div>;
+  return <div>newmeetup</div>;
 }
 export default NewMeetUpPage;
