@@ -8,6 +8,6 @@ function Layout(props) {
       <main className={style.main}>{props.children}</main>
     </div>
   );
-}
+} 
 
 export default Layout;

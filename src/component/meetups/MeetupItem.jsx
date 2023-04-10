@@ -1,4 +1,4 @@
-import Card from "../component/UI/Card";
+import Card from "../UI/Card";
 import style from "./meetupItem.module.css";
 
 function MeetupItem(props) {
