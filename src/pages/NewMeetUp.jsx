@@ -1,7 +1,9 @@
-import {useHistory} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import NewMeetupForm from "../component/meetups/NewMeetupForm";
 
 function NewMeetUpPage() {
+  const history =useNavigate();
+  
   function addMeetupHandler(meetupData) {
     fetch(
       "https://react-getting-started-cc32f-default-rtdb.firebaseio.com/meetups.json",
@@ -12,7 +14,9 @@ function NewMeetUpPage() {
           "Content-Type": "applicstion/json",
         },
       }
-    );
+    ).then(()=>{
+      history("/");
+    });
   }
   return (
     <section>
