@@ -21,7 +21,7 @@ function NewMeetupForm() {
       description: enteredDescription,
     };
 
-    console.log(meetupData);
+    console.log(meetupData );
   }
   return (
     <Card>
