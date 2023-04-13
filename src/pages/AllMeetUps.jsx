@@ -33,9 +33,17 @@ function AllMeetUpsPage() {
         return response.json();
       })
       .then((data) => {
-        const meetups=[];
+        const meetups = [];
+
+        for (const key in data) {
+          const meetup = {
+            id: key,
+            ...data[key],
+          };
+          meetups.push(meetup);
+        }
         setIsLoading(false);
-        setLoadedMeetUps(data);
+        setLoadedMeetUps(meetups);
       });
   }, []);
   if (isLoading) {
