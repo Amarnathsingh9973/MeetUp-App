@@ -7,7 +7,7 @@ function MainNavigation() {
   const favoriteCount = useContext(FavoritesContext);
   return (
     <header className={style.header}>
-      <div className={style.logo}>React Meetups</div>
+      <div className={style.logo}>Let's Meetup</div>
       <nav>
         <ul>
           <li>
