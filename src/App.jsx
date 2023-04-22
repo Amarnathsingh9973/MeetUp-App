@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import "./index.css";
 import AllMeetUpsPage from "./pages/AllMeetUps";
 import FavoritesPage from "./pages/Favorites";
 import NewMeetUpPage from "./pages/NewMeetUp";
