@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/MeetUp-App/static/css/main.2fc8b86c.css",
-    "main.js": "/MeetUp-App/static/js/main.3f9e1a7d.js",
+    "main.js": "/MeetUp-App/static/js/main.fe5be96d.js",
     "index.html": "/MeetUp-App/index.html",
     "main.2fc8b86c.css.map": "/MeetUp-App/static/css/main.2fc8b86c.css.map",
-    "main.3f9e1a7d.js.map": "/MeetUp-App/static/js/main.3f9e1a7d.js.map"
+    "main.fe5be96d.js.map": "/MeetUp-App/static/js/main.fe5be96d.js.map"
   },
   "entrypoints": [
     "static/css/main.2fc8b86c.css",
-    "static/js/main.3f9e1a7d.js"
+    "static/js/main.fe5be96d.js"
   ]
 }
