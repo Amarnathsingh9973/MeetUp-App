@@ -1,9 +1,23 @@
 import { useEffect, useState } from "react";
 import MeetupList from "../component/meetups/MeetupList";
+import Card from "../component/UI/Card";
 
 function AllMeetUpsPage() {
   let [isLoading, setIsLoading] = useState(true);
   let [loadedMeetUps, setLoadedMeetUps] = useState([]);
+
+  let context;
+  if (loadedMeetUps.length === 0) {
+    context = (
+      <Card>
+        <p>
+          <h2>You got no Meetup. Start Adding Some??</h2>
+        </p>
+      </Card>
+    );
+  } else {
+    context = <MeetupList meetups={loadedMeetUps} />;
+  }
 
   useEffect(() => {
     setIsLoading(true);
@@ -37,7 +51,8 @@ function AllMeetUpsPage() {
   return (
     <section>
       <h1>All Meetups</h1>
-      <MeetupList meetups={loadedMeetUps} />
+      {/* <MeetupList meetups={loadedMeetUps} /> */}
+      {context}
     </section>
   );
 }
